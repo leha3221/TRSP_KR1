@@ -15,7 +15,7 @@ async def root():
 #№1.2
 @app.get("/page",response_class=HTMLResponse)
 async def get_page():
-    path= r"/index.html"  #я не знаю правильно так или нет, но у меня по другому не рабоает
+    path= r"/index.html" 
     return FileResponse(path, media_type="text/html")
 
 #№1.3
